@@ -17,6 +17,7 @@
 
 ```bash
 pip install -r requirements.txt
+pip install -U  micropython-esp32-s3-stubs --target ./.types --no-user
 ```
 
 5. Make the `espy.sh` script executable: 

@@ -1,24 +1,16 @@
 import time
 
-from machine import Pin
+from machine import PWM, Pin
 
-pins = [21, 47, 48, 38, 39, 40, 41, 42, 2, 1]
+pwm = PWM(Pin(2, Pin.OUT), freq=10_000)
 
-
-def showled():
-    length = len(pins)
-    print("hi")
-    for i in range(0, length):
-        led = Pin(pins[i], Pin.OUT)
-        led.value(1)
-        time.sleep_ms(100)
-        led.value(0)
-    for i in range(0, length):
-        led = Pin(pins[(length - i - 1)], Pin.OUT)
-        led.value(1)
-        time.sleep_ms(100)
-        led.value(0)
-
-
-while True:
-    showled()
+try:
+    while True:
+        for i in range(1024):
+            pwm.duty(i)
+            time.sleep_ms(1)
+        for i in range(1023, -1, -1):
+            pwm.duty(i)
+            time.sleep_ms(1)
+except:
+    pwm.deinit()
