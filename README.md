@@ -1,4 +1,9 @@
-# esp32s3-micropython
+# espy
+
+## Pre-requisites
+
+- [VS Code](https://code.visualstudio.com/)
+- [Python](https://www.python.org/downloads/)
 
 ## Setup
 
@@ -8,10 +13,14 @@
 
 3. Configure your environment variables in a `.env` file.
 
-4. Install the required Python packages: `pip install -r requirements.txt`.
+4. Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
 
 5. Make the `esp.sh` script executable: 
-   
+
 ```bash
 chmod 777 ./esp.sh
 ```
