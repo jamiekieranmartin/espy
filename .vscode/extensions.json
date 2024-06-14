@@ -4,6 +4,7 @@
     "ms-python.vscode-pylance",
     "ms-python.black-formatter",
     "ms-python.isort",
-    "foxundermoon.shell-format"
+    "foxundermoon.shell-format",
+    "ms-vscode.vscode-serial-monitor"
   ]
 }
