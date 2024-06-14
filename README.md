@@ -11,3 +11,5 @@ chmod 777 ./esp.sh
 ./esp.sh flash
 ./esp.sh upload
 ```
+
+https://docs.micropython.org/en/latest/esp32/quickref.html
