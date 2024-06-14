@@ -6,11 +6,16 @@
 set -euo pipefail
 
 function erase() {
-  echo "Erasing flash..."
+  echo "Erasing..."
   esptool.py --chip $CHIP --port /dev/$PORT erase_flash
 }
 
 function flash() {
+  if [ -z "$1" ]; then
+    echo "Usage: stack flash <firmware>"
+    exit 1
+  fi
+  erase
   echo "Flashing $1..."
   esptool.py --chip $CHIP --port /dev/$PORT write_flash -z 0 $1
 }
