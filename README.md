@@ -19,22 +19,22 @@
 pip install -r requirements.txt
 ```
 
-5. Make the `esp.sh` script executable: 
+5. Make the `espy.sh` script executable: 
 
 ```bash
-chmod 777 ./esp.sh
+chmod 777 ./espy.sh
 ```
 
-6. Run the `esp.sh` script to flash the ESP32S3:
+6. Run the `espy.sh` script to flash the ESP32S3:
 
 ```bash
-./esp.sh flash
+./espy.sh flash
 ```
 
-7.  Run the `esp.sh` script to upload the code to the ESP32S3:
+7.  Run the `espy.sh` script to upload the code to the ESP32S3:
 
 ```bash
-./esp.sh upload
+./espy.sh upload
 ```
 
 # References
