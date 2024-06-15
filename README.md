@@ -35,6 +35,12 @@ chmod +x ./espy.sh
 ./espy.sh upload
 ```
 
+OR, watch the code for changes and upload them automatically:
+
+```bash
+./espy.sh watch
+```
+
 # References
 
 ## esp32
