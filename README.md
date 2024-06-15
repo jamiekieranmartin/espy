@@ -4,35 +4,32 @@
 
 - [VS Code](https://code.visualstudio.com/)
 - [Python](https://www.python.org/downloads/)
+- [CH34XSER driver]
+  - [MacOS](https://www.wch-ic.com/downloads/CH34XSER_MAC_ZIP.html)
+  - [Windows](https://www.wch-ic.com/downloads/CH341SER_EXE.html)
 
 ## Setup
 
-1. Install the CH343SER driver for the ESP32S3.
-
-2. Install the recommended VS Code extensions.
-
-3. Configure your environment variables in a `.env` file.
-
-4. Install the required Python packages:
+1. Install the required Python packages + MicroPython type stubs:
 
 ```bash
-pip install -r requirements.txt
-pip install -U  micropython-esp32-s3-stubs --target ./typings --no-user
+pip install -U -r requirements.txt 
+pip install -U -r micropython_esp32_s3_stubs --target ./.vscode/typings --no-user
 ```
 
-5. Make the `espy.sh` script executable: 
+2. Make the `espy.sh` script executable: 
 
 ```bash
 chmod +x ./espy.sh
 ```
 
-6. Run the `espy.sh` script to flash the ESP32S3:
+3. Run the `espy.sh` script to flash the chip:
 
 ```bash
 ./espy.sh flash
 ```
 
-7.  Run the `espy.sh` script to upload the code to the ESP32S3:
+4.  Run the `espy.sh` script to upload the code to the chip:
 
 ```bash
 ./espy.sh upload

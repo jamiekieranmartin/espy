@@ -4,7 +4,7 @@
   "python.analysis.diagnosticSeverityOverrides": {
     "reportMissingModuleSource": "none"
   },
-  "python.analysis.typeshedPaths": ["./typings"],
+  "python.analysis.stubPath": ".vscode/typings",
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,

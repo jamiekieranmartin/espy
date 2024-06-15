@@ -11,13 +11,9 @@ function erase() {
 }
 
 function flash() {
-  if [ -z "$1" ]; then
-    echo "Usage: stack flash <firmware>"
-    exit 1
-  fi
   erase
   echo "Flashing $1..."
-  esptool.py --chip $CHIP --port /dev/$PORT write_flash -z 0 $1
+  esptool.py --chip $CHIP --port /dev/$PORT write_flash -z 0 $FIRMWARE
 }
 
 function upload() {
