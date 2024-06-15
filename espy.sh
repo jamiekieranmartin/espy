@@ -12,7 +12,7 @@ function erase() {
 
 function flash() {
   erase
-  echo "Flashing $1..."
+  echo "Flashing $FIRMWARE..."
   esptool.py --chip $CHIP --port /dev/$PORT write_flash -z 0 $FIRMWARE
 }
 
