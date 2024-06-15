@@ -23,7 +23,7 @@ pip install -U  micropython-esp32-s3-stubs --target ./typings --no-user
 5. Make the `espy.sh` script executable: 
 
 ```bash
-chmod 777 ./espy.sh
+chmod +x ./espy.sh
 ```
 
 6. Run the `espy.sh` script to flash the ESP32S3:
