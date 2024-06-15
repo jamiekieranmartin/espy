@@ -37,4 +37,10 @@ chmod +x ./espy.sh
 
 # References
 
+## esp32
+
 https://docs.micropython.org/en/latest/esp32/quickref.html
+
+### MicroPython downloads
+
+https://micropython.org/download/ESP32_GENERIC_S3/
