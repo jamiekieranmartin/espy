@@ -6,7 +6,7 @@
 - [Python](https://www.python.org/downloads/)
 - CH34XSER driver
   - [MacOS](https://www.wch-ic.com/downloads/CH34XSER_MAC_ZIP.html)
-  - [Windows](https://www.wch-ic.com/downloads/CH341SER_EXE.html)
+  - [Windows](https://www.wch-ic.com/downloads/CH343SER_EXE.html)
 
 ## Setup
 
