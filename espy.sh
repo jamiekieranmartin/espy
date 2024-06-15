@@ -16,6 +16,11 @@ function flash() {
   esptool.py --chip $CHIP --port /dev/$PORT write_flash -z 0 $FIRMWARE
 }
 
+function watch() {
+  echo "Watching for changes..."
+  npx nodemon --watch src --ext py --exec "./espy.sh upload"
+}
+
 function upload() {
   for file in ./src/*.py; do
     if [ -f "$file" ]; then
