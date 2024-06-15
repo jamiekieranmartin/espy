@@ -1,6 +1,6 @@
 # espy
 
-## Pre-requisites
+## Prerequisites
 
 - [VS Code](https://code.visualstudio.com/)
 - [Python](https://www.python.org/downloads/)
