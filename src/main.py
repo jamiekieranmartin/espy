@@ -6,6 +6,7 @@ pwm = PWM(Pin(2, Pin.OUT), freq=10_000)
 
 try:
     while True:
+        time.sleep_ms(100)
         for i in range(1024):
             pwm.duty(i)
             time.sleep_ms(1)
