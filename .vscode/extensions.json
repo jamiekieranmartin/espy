@@ -5,6 +5,7 @@
     "ms-python.black-formatter",
     "ms-python.isort",
     "foxundermoon.shell-format",
-    "ms-vscode.vscode-serial-monitor"
+    "ms-vscode.vscode-serial-monitor",
+    "tomoki1207.pdf"
   ]
 }
