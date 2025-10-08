@@ -13,8 +13,10 @@
 1. Install the required Python packages + MicroPython type stubs:
 
 ```bash
-pip install -U -r requirements.txt
-pip install -U micropython-esp32-s3-stubs --target ./.vscode/typings --no-user
+python3 -m venv ./env
+source ./env/bin/activate
+python3 -m pip install -U -r requirements.txt
+python3 -m pip install -U micropython-esp32-s3-stubs --target ./.vscode/typings --no-user
 ```
 
 2. Make the `espy.sh` script executable:
