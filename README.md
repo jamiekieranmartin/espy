@@ -25,13 +25,25 @@ python3 -m pip install -U micropython-esp32-s3-stubs --target ./.vscode/typings 
 chmod +x ./espy.sh
 ```
 
-3. Run the `espy.sh` script to flash the chip:
+3. Configure your `.env` file
+
+```bash
+cp .default.env .env
+```
+
+To configure `PORT`, plug in the device and search for the USB device.
+
+```bash
+ls /dev/tty.*
+```
+
+4. Run the `espy.sh` script to flash the chip:
 
 ```bash
 ./espy.sh flash
 ```
 
-4.  Run the `espy.sh` script to upload the code to the chip:
+5.  Run the `espy.sh` script to upload the code to the chip:
 
 ```bash
 ./espy.sh upload
